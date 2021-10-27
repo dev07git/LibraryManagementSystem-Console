@@ -40,19 +40,16 @@ namespace LibraryMgmtSystem
 
 
 
-            Console.WriteLine("*****-----Thanks for using out Library Management System-----*****");
+            Console.WriteLine("*****-----Thanks for using our Library Management System-----*****");
 
-
-
-            //};
         }
 
         public void Run()
         {
             // NOTE: Adding some sample Data
             _libraryManagementSystem.SeedingData();
-
-            Console.WriteLine("*****-----Welcome To Library Management System-----*****");
+            Console.Clear();
+            Console.WriteLine("\n\n*****-----Welcome To Library Management System-----*****");
             string bookCategoryName = null, shelfName = null, bookName = null;
             List<BookCategories> bookCategories;
             while (true)
@@ -156,6 +153,7 @@ namespace LibraryMgmtSystem
                     case 0:
                         return;
                     default:
+                        Console.WriteLine("Invalid selection, please try again by entering option#");
                         break;
                 }
             }
